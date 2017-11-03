@@ -51,7 +51,7 @@ public class TabBarParentFragment extends Fragment {
 
         @Override
         public int getCount() {
-            return 3;
+            return 3;//4;
         }
 
         @Override
@@ -63,6 +63,8 @@ public class TabBarParentFragment extends Fragment {
                     return new PizzaFragment();
                 case 2:
                     return new StoreFragment();
+                //case 3:
+                //    return new PizzaFragment();
             }
             return null;
         }
@@ -71,11 +73,13 @@ public class TabBarParentFragment extends Fragment {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "home";
+                    return "Pasta";
                 case 1:
-                    return "pizza";
+                    return "Pizza";
                 case 2:
-                    return "pasta";
+                    return "Store";
+                //case 3:
+                //    return "pizza2";
             }
             return null;
         }
