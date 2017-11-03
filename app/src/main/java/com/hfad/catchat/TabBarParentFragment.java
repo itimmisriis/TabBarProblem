@@ -62,7 +62,7 @@ public class TabBarParentFragment extends Fragment {
                 case 1:
                     return new PizzaFragment();
                 case 2:
-                    return new PastaFragment();
+                    return new StoreFragment();
             }
             return null;
         }
